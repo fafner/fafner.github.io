@@ -44,15 +44,23 @@ var current_map = c_maj_map;
 function generate_diatonic(index) {
     if (index > 7) return;
 
-    var one = current_map[index].toLowerCase() + "/4";
+    var base = 4;
+
+    var one = current_map[index].toLowerCase() + "/" + base;
 
     index += 2;
-    if (index > 7) index -= 7;
-    var two = current_map[index].toLowerCase() + "/4";
+    if (index > 7) {
+        index -= 7;
+        base++;
+    }
+    var two = current_map[index].toLowerCase() + "/" + base;
 
     index += 2;
-    if (index > 7) index -= 7;
-    var three = current_map[index].toLowerCase() + "/4";
+    if (index > 7) {
+        index -= 7;
+        base++;
+    }
+    var three = current_map[index].toLowerCase() + "/" + base;
 
     return [one, two, three];
 }
