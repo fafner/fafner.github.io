@@ -16,16 +16,6 @@
                 <div class="col-12">
                     <div class="btn-toolbar d-flex justify-content-between" role="toolbar">
                         <div>
-                            <div class="btn-group mr-2" role="group" aria-label="First group">
-                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                    <label class="btn btn-secondary active">
-                                        <input type="radio" name="options" id="option1" autocomplete="off" checked> Functions
-                                    </label>
-                                    <label class="btn btn-secondary">
-                                        <input type="radio" name="options" id="option2" autocomplete="off"> Chords
-                                    </label>
-                                </div>
-                            </div>
                             <div class="btn-group mr-2" role="group">
                                 <div class="dropdown">
                                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -34,9 +24,21 @@
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                         <h6 class="dropdown-header">Major</h6>
                                         <a class="dropdown-item" href="#">C</a>
+                                        <a class="dropdown-item" href="#">D</a>
+                                        <a class="dropdown-item" href="#">E</a>
+                                        <a class="dropdown-item" href="#">F</a>
+                                        <a class="dropdown-item" href="#">G</a>
+                                        <a class="dropdown-item" href="#">A</a>
+                                        <a class="dropdown-item" href="#">B</a>
                 
                                         <h6 class="dropdown-header">Minor</h6>
                                         <a class="dropdown-item" href="#">C</a>
+                                        <a class="dropdown-item" href="#">D</a>
+                                        <a class="dropdown-item" href="#">E</a>
+                                        <a class="dropdown-item" href="#">F</a>
+                                        <a class="dropdown-item" href="#">G</a>
+                                        <a class="dropdown-item" href="#">A</a>
+                                        <a class="dropdown-item" href="#">B</a>
                                     </div>
                                 </div>
                             </div>
@@ -50,6 +52,8 @@
             </div>
 
             <div class="row output-window" id="main-window">
+                <div id="chords-holder"></div>
+                <div id="sheet-music"></div>
             </div>
 
             <div class="row toolbar">
@@ -78,6 +82,7 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/vexflow@1.2.87/releases/vexflow-debug.js"></script>
         <script src="index.js"></script>
     </body>
 </html>
